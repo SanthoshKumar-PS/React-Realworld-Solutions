@@ -1,0 +1,77 @@
+[
+  {
+    "id": 1,
+    "question": "Which hook adds local state to functional components?",
+    "answer": "useState is a hook that lets you store and update values inside functional components."
+  },
+  {
+    "id": 2,
+    "question": "Which hook handles side effects like fetching data?",
+    "answer": "useEffect runs code after render and is used for side effects like API calls or subscriptions."
+  },
+  {
+    "id": 3,
+    "question": "Which prop lets you pass data to child components?",
+    "answer": "props allow parent components to pass data and functions down to children."
+  },
+  {
+    "id": 4,
+    "question": "Which prop gives access to nested elements in JSX?",
+    "answer": "children is a special prop used to render nested content inside a component."
+  },
+  {
+    "id": 5,
+    "question": "Which hook gives direct access to DOM elements?",
+    "answer": "useRef returns a mutable object that can hold a DOM reference or a value."
+  },
+  {
+    "id": 6,
+    "question": "Which hook memoizes expensive computed values?",
+    "answer": "useMemo returns a cached result of a function, recalculating only when dependencies change."
+  },
+  {
+    "id": 7,
+    "question": "Which hook memoizes callback functions?",
+    "answer": "useCallback returns a memoized version of a function to avoid unnecessary re-creations."
+  },
+  {
+    "id": 8,
+    "question": "Which method is used to update component state in class components?",
+    "answer": "setState is used in class components to update local state and trigger re-renders."
+  },
+  {
+    "id": 9,
+    "question": "Which lifecycle method runs after the component mounts?",
+    "answer": "componentDidMount is a lifecycle method used to run code after the component is added to the DOM."
+  },
+  {
+    "id": 10,
+    "question": "Which hook lets you manage global state using reducers?",
+    "answer": "useReducer is a hook that helps manage complex state logic with reducer functions."
+  },
+  {
+    "id": 11,
+    "question": "Which hook helps you share state across components?",
+    "answer": "useContext lets you access and share values stored in a React context."
+  },
+  {
+    "id": 12,
+    "question": "Which method prevents component re-rendering in certain cases?",
+    "answer": "shouldComponentUpdate decides whether a class component should re-render or not."
+  },
+  {
+    "id": 13,
+    "question": "Which hook lets you delay showing a component until after a delay?",
+    "answer": "useDeferredValue postpones a value update to reduce blocking renders."
+  },
+  {
+    "id": 14,
+    "question": "Which hook helps with transitions for smoother UI updates?",
+    "answer": "useTransition allows you to mark updates as non-urgent and avoid blocking the UI."
+  },
+  {
+    "id": 15,
+    "question": "Which method lets you derive state from props in class components?",
+    "answer": "getDerivedStateFromProps is used to update state based on prop changes before rendering."
+  }
+]
