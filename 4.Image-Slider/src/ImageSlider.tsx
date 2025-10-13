@@ -47,7 +47,7 @@ useEffect(()=>{
 
     }
     return (
-    <div className='bg-zinc-600 min-h-screen flex justify-center items-center text-black'>
+    <div className='bg-zinc-200 min-h-screen flex justify-center items-center text-black'>
         {isLoading && (
             <div>Loading...</div>
         )}
