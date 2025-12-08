@@ -6,8 +6,8 @@ const ScreenComponents = () => {
         <div className='space-y-4 w-full'>
             {/* Title */}
             <div className='flex flex-col items-center justify-center gap-2'>
-                <h1 className='text-2xl md:text-3xl lg:text-4xl font-medium '>Cinema Hall Booking</h1>
-                <p className='text-gray-600 text-lg'>Select your prefered seats</p>
+                <h1 className='text-xl md:text-2xl lg:text-3xl font-medium '>Cinema Hall Booking</h1>
+                <p className='text-gray-600 text-bade lg:text-lg'>Select your prefered seats</p>
             </div>
             
             {/* Screen */}
@@ -15,12 +15,8 @@ const ScreenComponents = () => {
             <p className='w-full text-center font-medium text-gray-500'>SCREEN 1</p>
 
             {/* New Seats */}
-                <SeatArrangement/>
+            <SeatArrangement/>
 
-
-            {/* Labels and proces */}
-            
-            {/* Booking Summary */}
 
         </div>
 
