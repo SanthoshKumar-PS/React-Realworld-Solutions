@@ -19,6 +19,7 @@ const ScreenComponents = () => {
 
 
             {/* Labels and proces */}
+            
             {/* Booking Summary */}
 
         </div>
