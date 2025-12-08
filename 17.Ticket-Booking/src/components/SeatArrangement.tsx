@@ -1,4 +1,5 @@
 import React, { useMemo, useState } from 'react'
+import type { seatingConfigType } from './ScreenComponents'
 
 type SelectedSeatType = {
     seatNo:string,
@@ -6,17 +7,7 @@ type SelectedSeatType = {
     price:number
 }
 
-type seatingConfigType = {
-    type: string,
-    rows: number,
-    seatsPerRow: number,
-    price: number    
-}
-const seatingConfig : seatingConfigType[] = [
-  { type: "Regular", rows: 4, seatsPerRow: 12, price: 150 },
-  { type: "Premium", rows: 3, seatsPerRow: 12, price: 250 },
-  {type: "VIP", rows: 2, seatsPerRow: 6, price: 500 }
-];
+
 const seatsLabel = [
     {label:'Selected',color:'bg-green-500'},
     {label:'Regular (₹150)',color:'bg-blue-200'},
@@ -25,7 +16,7 @@ const seatsLabel = [
     {label:'Not Available',color:'bg-gray-500'},
 ]
 
-const SeatArrangement = () => {
+const SeatArrangement = ({seatingConfig}:{seatingConfig:seatingConfigType[]}) => {
     const [selectedSeats, setSelectedSeats] = useState<SelectedSeatType[]>([])
     const [bookedSeats,setBookedSeats] = useState<string[]>(['A1','B2','A6','E4','E5','E6'])
     let rowStartCode = 65
@@ -38,7 +29,7 @@ const SeatArrangement = () => {
         if(category==='Regular') return "bg-blue-200"
         if(category==='Premium') return "bg-pink-200"
         if(category==='VIP') return "bg-yellow-200"
-        return "bg-indigo-300"
+        return "bg-purple-300"
     }
 
     const handleToggleSeat = (seatId: string, category:string,price:number) => {
